@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece Character Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>One Piece Character Search</h1>
+
+    <!-- Search Bar and Button -->
+    <div>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter Character Name" required>
+            <button id="search-button" type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Character Info Card (Initially Hidden) -->
+    <div class="character-info" id="character-info" style="display:none;">
+        <h2 id="character-name"></h2>
+        <p id="character-id"></p>
+        <p id="age"></p>
+        <p id="size"></p>
+        <p id="bounty"></p>
+        
+        <!-- Crew Info 
+        <div id="crew">
+            <h3>Crew</h3>
+            <p id="crew-name"></p>
+            <p id="crew-status"></p>
+        </div> 
+    -->
+
+        <!-- Job Info (New Section) -->
+        <div id="job-info">
+            <h3>Job</h3>
+            <p id="job"></p> <!-- Add this line for job info -->
+        </div>
+
+        <!-- Fruit Info -->
+        <div id="fruit">
+            <h3>Fruit</h3>
+            <p id="fruit-name"></p>
+            <p id="fruit-description"></p>
+            <img id="fruit-image" src="" alt="Fruit Image" style="max-width: 100px;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

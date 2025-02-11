@@ -1,0 +1,207 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Main Heading Styling */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff9b00; /* One Piece Yellow color */
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #search-input {
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    width: 250px;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  #search-button {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    background-color: #ff9b00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-button:hover {
+    background-color: #e68900;
+  }
+  
+  /* Layout Container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  /* Character Info Card */
+  .character-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: left;
+    font-size: 1.1rem;
+    display: none; /* Initially hidden */
+  }
+  
+  /* Character Info Title */
+  .character-info h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #ff9b00;
+  }
+  
+  .character-info p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Crew Info Section */
+  #crew {
+    margin-top: 20px;
+  }
+  
+  #crew h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #crew p {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  /* Job Info Section */
+  #job-info {
+    margin-top: 20px;
+  }
+  
+  #job-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #job-info p {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  /* Fruit Info Section */
+  #fruit {
+    margin-top: 20px;
+  }
+  
+  #fruit h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #fruit p {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  #fruit img {
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  #fruit img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Crew Members Section */
+  #crew-members {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  #crew-members h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #crew-members ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #crew-members li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .character-info {
+      width: 280px;
+    }
+  
+    #search-input {
+      width: 200px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    #search-button {
+      padding: 8px 12px;
+      font-size: 1rem;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #crew-members {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
